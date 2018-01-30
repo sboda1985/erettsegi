@@ -1,0 +1,2 @@
+# erettsegi
+Erettsegi tetelek megoldasa
