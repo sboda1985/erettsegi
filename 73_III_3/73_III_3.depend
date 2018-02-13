@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1518555378 source:c:\users\madry\documents\info\73_iii_3\main.cpp
+	<iostream>
+	<fstream>
+
