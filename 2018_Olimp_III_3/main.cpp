@@ -1,26 +1,31 @@
 #include <iostream>
 
-// 1234 -> 443221
-
 using namespace std;
-
-int main()
+int echilibrat(int n)
 {
-    int szam, parosszamjegy,  paratlanszamjegy, parosS=0, paratlanS=0;
-    cout << "Kerem a szamot";
-    cin >> szam;
-    while (szam > 0){
-        parosszamjegy = szam%10;
-        szam = szam/10;
-        paratlanszamjegy = szam%10;
-        szam = szam / 10;
+    int parosszamjegy,  paratlanszamjegy, parosS=0, paratlanS=0;
+    while (n > 0)
+    {
+        parosszamjegy = n%10;
+        n = n/10;
+        paratlanszamjegy = n%10;
+        n = n / 10;
         parosS += parosszamjegy;
         paratlanS += paratlanszamjegy;
     }
-    if ((parosS%2 == 0) && (paratlanS%2 == 1)){
-    cout << "kiegyensulyozott" << endl;
-    } else {
-        cout << "nem kiegyensulyozott";
+    if ((parosS%2 == 0) && (paratlanS%2 == 1))
+    {
+        return 1;
     }
-    return 0;
+    else
+    {
+        return 0;
+    }
+
+}
+int main()
+{
+    cout << echilibrat(11211) << endl;
+    cout << echilibrat(25163912);
+        return 0;
 }
