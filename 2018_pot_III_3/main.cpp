@@ -2,14 +2,11 @@
 
 
 using namespace std;
-
-int main()
+int interval(int n)
 {
-    int a, i, n, x;
+    int a, i,  x;
     bool prim = true;
     int primekszama = 0;
-    cout << "n=";
-    cin >> n;
     x = n;
     while(primekszama < 2)
     {
@@ -30,7 +27,11 @@ int main()
         x++;
 
     }
-    cout << x-2;
+    return x - 2;
+}
+int main()
+{
 
+    cout << interval(8);
     return 0;
 }
