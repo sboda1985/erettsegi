@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1550518836 source:c:\users\kovács elek Ákos\desktop\codeblocks\haziinfofasznorbivaegzenlet\main.cpp
+	<iostream>
+	<string>
+	<fstream>
+	<algorithm>
+	<iomanip>
+
