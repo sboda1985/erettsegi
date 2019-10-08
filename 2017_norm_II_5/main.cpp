@@ -22,7 +22,7 @@ int main()
         a[i][m-1] = x;
     }
 
-    for(j=0; j<n; j++){
+    for(j=0; j<m; j++){
         a[0][j] = x;
         a[n-1][j] = x;
     }
