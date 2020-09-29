@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1601275636 source:/home/sboda/Dropbox/info_matekfizika/XB/programok/2019_szim_III_3/main.cpp
+	<iostream>
+	<fstream>
+
