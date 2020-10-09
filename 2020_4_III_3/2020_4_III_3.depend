@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1602217653 source:/home/sboda/Dropbox/info_matekfizika/XIIB/programok/2020_4_III_3/main.cpp
+	<iostream>
+	<fstream>
+
