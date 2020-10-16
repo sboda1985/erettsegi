@@ -7,7 +7,7 @@ int main()
 {
     int s[1001] = {0};
     ifstream in("bac.in");
-    int x, min = 1002, max = -1, db = 0;
+    int x, min = 1002, max = -1;
     while (in >> x){
         s[x]++;
         if (x < min) {
@@ -16,7 +16,7 @@ int main()
         if (x > max) {
             max = x;
         }
-        db++;
+        
     }
     int counter = 0;
     for(int i = min; i<max+1; i++){
@@ -24,7 +24,7 @@ int main()
             counter++;
         }
     }
-    if ((db%2 == 0 && counter > 2) || (db%2 == 1 && counter > 1)) {
+    if ( counter > 1) {
         cout << "NU";
     } else {
         cout << "DA";
