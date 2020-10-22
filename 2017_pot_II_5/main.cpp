@@ -4,7 +4,7 @@ using namespace std;
 
 int main()
 {
-    double a[100][100], b[100][100];
+    double a[100][100];
     int i, j, n, m;
     cout << "n=";
     cin >> n;
