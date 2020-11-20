@@ -53,6 +53,10 @@ int main()
         prev2 = prev1;
         prev1 = current;
     }
+     if (maxlength < length)
+    {
+        maxlength = length;
+    }
 
     cout << maxlength << endl;
     return 0;
