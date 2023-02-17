@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1571721670 source:d:\szilard\xib\6_ii_5\main.cpp
+	<iostream>
+	<algorithm>
+	<string>
+

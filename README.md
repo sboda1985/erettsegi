@@ -9,3 +9,5 @@ Az elnevezési konvenció a következő (amelyek között _ lesz):
 * Feladatszám
 
 Vagy ha a 2009 es 100 tétel egyike, akkor évszám helyett a tételszámmal fog kezdődni (pl 78)
+
+Évenként külön mappába rendezve a könnyebb kereshetőség kedvéért.
