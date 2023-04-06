@@ -11,15 +11,11 @@ int main()
     cin >> n;
     for(int i = 0; i < n; i++){
         for(int j = 0; j< n; j++){
-            if (j==0) {
-                v[i][j] = i+1;
-            } else if (i+j == n-1) {
-                v[i][j] = n;
-            } else if (i+j < n - 1) {
-                v[i][j] = v[i][j-1] + 1;
-            } else {
-                v[i][j] = v[i][j-1] - 1;
-            }
+                if (i+j <= n-1) {
+                    v[i][j] = (i+j+1);
+                } else {
+                    v[i][j] = (n-1) - (i+j) + (n);
+                }
             cout << v[i][j] << " ";
         }
         cout << endl;
