@@ -8,7 +8,7 @@ int main()
     string s[3] = {"fam.","gen.","spe."};
     getline(cin, szoveg);
     int lastspace = -1;
-    int shortcut = 0;
+    int shortcut = -1;
     char prev = ' ';
     for(int i= 0; i<szoveg.size(); i++)
     {
