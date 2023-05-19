@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1684474747 source:d:\documente\szilard\xiib\erettsegi\2023\2023_elo_iii_3\main.cpp
+	<iostream>
+	<fstream>
+
