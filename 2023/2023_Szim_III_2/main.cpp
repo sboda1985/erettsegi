@@ -34,13 +34,16 @@ int main()
             output += s[shortcut][2];
             output += s[shortcut][3];
         }
-        if (szoveg[i] == ' ')
+        if (szoveg[i] == ' ' || i == szoveg.size()-1)
         {
             if (prev != '.')
             {
                 for (int j=lastspace+1; j<i; j++)
                 {
                     output += szoveg[j];
+                }
+                if (i == szoveg.size()-1){
+                   output += szoveg[i];
                 }
             }
             lastspace = i;
