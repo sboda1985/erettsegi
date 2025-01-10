@@ -4,9 +4,8 @@ using namespace std;
 
 void divPrim(int n, int &s)
 {   s = 0;
-    int nr=0, oszto=2;
-    while(oszto <=n)
-    {
+    int nr=0;
+    for(int oszto=2; oszto <=n; oszto++){
         nr = 0;
         while(n%oszto == 0)
         {
@@ -17,9 +16,7 @@ void divPrim(int n, int &s)
         {
             s+=oszto;
         }
-        oszto++;
     }
-
 }
 
 int main()

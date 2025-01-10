@@ -4,18 +4,18 @@ using namespace std;
 
 int abundent(int n)
 {
-    int S0 = 0;
+    double Sn = 0;
     for(int i=1; i<=n; i++)
     {
         if (n%i==0)
         {
-            S0+=i;
+            Sn+=i;
         }
     }
-    S0/=n;
+    Sn/=n;
     for(int x= n-1; x > 0; x--)
     {
-        int S = 0;
+        double S = 0;
         for(int i=1; i<=x; i++)
         {
             if (x%i==0)
@@ -24,7 +24,7 @@ int abundent(int n)
             }
         }
         S/=x;
-        if (S > S0)
+        if (S > Sn)
         {
             return 0;
         }
@@ -34,6 +34,6 @@ int abundent(int n)
 
 int main()
 {
-    cout << abundent(6) << endl;
+    cout << abundent(4) << endl;
     return 0;
 }

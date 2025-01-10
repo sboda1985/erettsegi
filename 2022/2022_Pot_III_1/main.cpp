@@ -4,13 +4,11 @@ using namespace std;
 
 
 void schimb(int &n, int x, int p){
-
     int tmp = 0;
     int hatvany = 1;
     while(n > 0){
         int szamjegy = n%10;
         n /= 10;
-
         if (p == 0){
             tmp = tmp + hatvany*x;
         } else {

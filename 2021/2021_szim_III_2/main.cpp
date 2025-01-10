@@ -5,29 +5,27 @@ using namespace std;
 int main()
 {
     int a[100][100];
-    int n, k, i, j;
+    int n, k, sor, oszlop;
     cout << "n=";
     cin >> n;
     cout << "k=";
     cin >> k;
-    for(i=0; i<n; i++){
-        for(j=0; j<n; j++){
-            cout << "a[" << i << "][" << j << "]=";
-            cin >> a[i][j];
+    for(sor=0; sor<n; sor++){
+        for(oszlop=0; oszlop<n; oszlop++){
+            cout << "a[" << sor << "][" << oszlop << "]=";
+            cin >> a[sor][oszlop];
         }
     }
     int temp = a[k-1][k-2];
-    for(j=k-2; j>0; j--){
-        a[k-1][j] = a[k-1][j-1];
+    for(oszlop=k-2; oszlop>0; oszlop--){
+        a[k-1][oszlop] = a[k-1][oszlop-1];
     }
     a[k-1][0] = temp;
-    for(i=0; i<n; i++){
-        for(j=0; j<k; j++){
-            cout << a[i][j] << " ";
+    for(sor=0; sor<n; sor++){
+        for(oszlop=0; oszlop<k; oszlop++){
+            cout << a[sor][oszlop] << " ";
         }
         cout << endl;
     }
-
-    cout << "Hello world!" << endl;
     return 0;
 }
