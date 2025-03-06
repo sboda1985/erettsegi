@@ -6,50 +6,57 @@ using namespace std;
 int main()
 {
     ifstream in("bac.txt");
-    int n,x, i=0, j;
+    int n,x, i=0, j, elsoParos = 0, elsoParatlan = 0, masodikParos = 0, masodikParatlan = 0;
     in >> n;
-    int max_paros = -1;
-    int max_paratlan = -1;
-
+    int maxParos = -1, maxParatlan = -1;
+    int minParos = 99999999, minParatlan = 999999999;
    for(i=0; i<n; i++){
        in >> x;
        if (x % 2 == 0) {
-           if (x > max_paros) {
-               max_paros = x;
+           elsoParos++;
+           if (x > maxParos) {
+               maxParos = x;
            }
        }
 
        if (x % 2 != 0) {
-           if (x > max_paratlan){
-               max_paratlan = x;
+           elsoParatlan++;
+           if (x > maxParatlan){
+               maxParatlan = x;
            }
        }
    }
-
-   int min_paros = 99999999;
-   int min_paratlan = 999999999;
 
    for(i=0; i<n; i++){
        in >> x;
        if (x % 2 == 0) {
-           if (x < min_paros) {
-               min_paros = x;
+           masodikParos++;
+           if (x < minParos) {
+               minParos = x;
            }
        }
 
        if (x % 2 != 0) {
-           if (x < min_paratlan) {
-               min_paratlan = x;
+           masodikParatlan++;
+           if (x < minParatlan) {
+               minParatlan = x;
            }
        }
    }
+    bool paritar = false;
+    if (minParatlan > maxParos && minParos > maxParatlan) {
+        paritar = true;
+    }
+    if (elsoParatlan == 0 || elsoParatlan == n) {
+        if (elsoParatlan == masodikParatlan){
+            paritar = true;
+        }
+    }
 
-    if (min_paratlan > max_paros && min_paros > max_paratlan) {
+    if (paritar) {
         cout << "DA";
     } else {
         cout << "NU";
     }
-
-    cout << endl;
     return 0;
 }
