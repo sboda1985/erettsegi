@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-
     ifstream in("date.in");
     int n, m, x, nr = 0;
     in >> m;
