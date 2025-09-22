@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1758175825 source:d:\szilard\xiib\erettsegi\erettsegi\2025\pot_iii_3\main.cpp
+	<iostream>
+	<fstream>
+
