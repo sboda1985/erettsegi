@@ -3,7 +3,7 @@
 using namespace std;
 
 int ascendent(int n, int x, int y){
-    int i, S = 0;
+    int S = 0;
     int hasonlitoSzamjegy = n %10;
     for(int i =x; i <=y; i++)
     {
