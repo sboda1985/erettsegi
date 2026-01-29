@@ -15,6 +15,7 @@ int Impare (int n)
         {
             ujszam = ujszam + szamjegy * hatvany;
             hatvany = hatvany * 10;
+            paratlan = true;
         }
     }
     if (paratlan)
