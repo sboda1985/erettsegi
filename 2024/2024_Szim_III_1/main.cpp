@@ -4,7 +4,7 @@ using namespace std;
 int Impare (int n)
 {
     int ujszam = 0, hatvany = 1, szamjegy;
-
+    bool paratlan = false;
     while(n>0)
     {
         szamjegy=n%10;
@@ -17,7 +17,9 @@ int Impare (int n)
             hatvany = hatvany * 10;
         }
     }
-    return ujszam;
+    if (paratlan)
+        return ujszam;
+    return -1;
 }
 
 int main()
